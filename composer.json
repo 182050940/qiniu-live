@@ -1,0 +1,30 @@
+{
+    "name": "laoliu/qiniu-live",
+    "description": "七牛云直播插件",
+    "require": {
+        "pili-engineering/pili-sdk-php.v2": "^2.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "刘阳",
+            "email": "182050940@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Laoliu\\Qiniu\\Live\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laoliu\\Qiniu\\Live\\QiniuLiveServiceProvider"
+            ],
+            "aliases": {
+                "QiniuLive": "Laoliu\\Qiniu\\Live\\Facades\\QiniuLive"
+            }
+        }
+    }
+}
